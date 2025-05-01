@@ -1,11 +1,11 @@
-# IATelligence
-IATelligence is a Python script that extracts the Import Address Table (IAT) from a PE file and uses OpenAI's GPT-3 model to provide details about each Windows API imported by the file. The script also searches for related MITRE ATT&CK techniques and explains how the API could potentially be used by attackers. 
+# IAwebmanifest
+IAwebmanifest is a Python script that extracts the Import Address Table (IAT) from a PE file and uses OpenAI's GPT-3 model to provide details about each Windows API imported by the file. The script also searches for related MITRE ATT&CK techniques and explains how the API could potentially be used by attackers. 
 
-It also displays the hashes of the file and estimates the cost of the GPT-3 requests. IATelligence is a proof of concept for using GPT-3 for malware analysis and quickly assessing the behavior of a malware based on its IAT.
+It also displays the hashes of the file and estimates the cost of the GPT-3 requests. IAwebmanifest is a proof of concept for using GPT-3 for malware analysis and quickly assessing the behavior of a malware based on its IAT.
 
 Below is a quick example of the result you'll get. Notice that the request can take longer depending of the size of the IAT. 
 
-![iatellifence](iatelligence.gif)
+![IAwebmanifest](iatelligence.gif)
 
 # Getting Started
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 To run the tool just simply specify a PE file as argument to the script. 
 
 ```
-python iatelligence.py sample.exe
+python IAwebmanifest.py sample.exe
 ```
 
 The script will also calculate the hashes as well as the estimated cost of the request. 
